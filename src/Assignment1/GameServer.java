@@ -24,7 +24,7 @@ class TCPGameServer extends Thread {
 	public void run(){
 		try {		
 			playersList = Helper.getList();
-			System.out.println("Client Connected");
+			//System.out.println("Client Connected");
 			DataInputStream dataInputStream = new DataInputStream(clientSocket.getInputStream());
 			ObjectOutputStream objectOutputStream = new ObjectOutputStream(clientSocket.getOutputStream());
 			String name = dataInputStream.readUTF();
